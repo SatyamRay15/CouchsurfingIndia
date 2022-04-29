@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <title>Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+     <!--linking css external file -->
+     <link rel="stylesheet" href="/main.css">
+
+        <!--linking fontawesome link-->
+    <script src="https://kit.fontawesome.com/1c15c31927.js" crossorigin="anonymous"></script>
+
+    <!--linking google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--linking bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/components/spinner/spinner.css">
+    <link rel="stylesheet" href="blog.css">
+  </head>
+  <body onload="myFunction()">
+     <!--Navbar-->
+    <div id="loader"></div>
+    <section id="myDiv">
+     <nav class="navbar navbar-expand-md navbar-light" style="background-color: #BCC4CB;">
+      <!-- Brand -->
+      <a class="navbar-brand" href="/index.html"><i><b>COUCHSURFING</b></i><img src="/images/Indian-Flag-Designs-PNG_ndvclp.png " width="100" height="auto"></a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="couchsurfing_home.html" class="nav-link">Home</a>
+          </li>
+         
+          <li class="nav-item">
+            <a href="#popular_places" class="nav-link">Popular Places</a>
+          </li>
+          <li class="nav-item">
+            <a href="/services/services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactUs/contact_us.html" class="nav-link">How it Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="/login/signup.html" style="text-decoration: none;" id="signup">
+              <button style="width:auto;border-radius: 5px;background-color: #73A7BC;" class="btn-green">  SignUp</button>
+         
+          </a>
+          </li>
+          <li class="nav-item">
+            <a href="/login/login.html" style="text-decoration: none;" id="login1">
+              <button style="width:auto;border-radius: 5px;margin-left: 5px;background-color: #4C5270;" class="btn-primary">Login</button>
+          </a>
+          </li>
+         </li>
+        </ul>
+      </div>
+    </nav>
+    <!--End of navbar-->
+
+     <!--Hero-Image-->
+     <div class="header">
+     <section class="hero-wrap image-responsive4" style="background-image: url('/images/blog_cover_image.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters main-text align-items-center">
+          <div class="col-lg-7 col-md-6 d-flex align-items-end">
+            <div class="text">
+              <h1 class="mb-4 text-capitalize">Write your own experience in Meghalaya
+              </h1>
+              <p style="font-size: 18px;">Life is all about creating and living experiences that are worth sharing.</p>
+              <div class="btn btn-hero py-2 px-3" onclick="redirect()">Write Blog</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <!--Footer Section-->
+<footer class="bg-secondary p-4 text-white">
+  <div class="container  p-5">
+    
+    <div class="row">
+      <div class="col-lg-4 ">
+        <ul>
+          <li><b>Trending Places to Visit</b></li>
+          <li><a href="/popular_places/krangsuri_falls.html" style="text-decoration: none;color: white;">Krangsuri Falls</a></li>
+          <li><a href="/popular_places/living_root_bridge.html" style="text-decoration: none;color: white;">Cherrapunjee</a> </li>
+          <li><a href="/popular_places/umiam_lake.html" style="text-decoration: none;color: white;"> Umiam Lake</a></li>
+          <li><a href="/popular_places/dawki.html" style="text-decoration: none;color: white;">Dawki</a> </li>
+          <li><a href="/popular_places/laitlum.html" style="text-decoration: none;color: white;">Laitlum</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>Couchsurfing</b>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Host a stay</a>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Book a stay</a>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Write a Blog</a>
+          </li>
+          <li>
+            <a href="services/services.html" style="text-decoration: none;color: white;">Services</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>You can Connect with us:</b>
+          </li>
+          <br>
+          <li>
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <a href="https://www.facebook.com/Meghtourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-facebook-square fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-xm-4">
+                <a href="https://www.instagram.com/meghalayatourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-instagram fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <a href="https://twitter.com/mesmerisingmegh?lang=en" style="text-decoration: none;color: white;">
+                  <i class="fa fa-twitter fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-dark">© 2020 Copyright: CouchSurfing India
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--End Of Footer Section-->
+<script src="/components/spinner/spinner.js"></script>
+<script src="blog.js" type="module"></script>
+</section>
+  </body>
+</html>

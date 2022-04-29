@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+
+  <link rel="stylesheet" href="/components/spinner/spinner.css">
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0px;
+      background-image: url('/images/india-best-places-to-visit-ajanta-ellora-caves.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 5px;
+    }
+    .form{
+      padding: 50px;
+    }
+    .main{
+        background-color: whitesmoke;
+        border-radius: 30px;
+    }
+    
+
+  </style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <div class="main" id="myDiv">
+  <form class="form">
+    <div class="p-3">
+      <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+    </div>
+    <br>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row">
+      <div class="col-md-6 mb-4">
+
+        <div class="form-outline">
+          <label class="form-label" for="firstName">First Name</label>
+          <input type="text" id="firstName" class="form-control form-control-lg" required/>
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-4">
+
+        <div class="form-outline">
+          <label class="form-label" for="lastName">Last Name</label>
+          <input type="text" id="lastName" class="form-control form-control-lg" />
+        </div>
+
+      </div>
+    </div>
+
+    <!--Age and Gender-->
+
+    <div class="row">
+      <div class="col-md-6 mb-4 d-flex align-items-center">
+
+        <div class="form-outline datepicker w-100">
+          
+          <label for="birthdayDate" class="form-label">Age</label>
+          <input
+            type="number"
+            class="form-control form-control-lg"
+            id="birthdayDate"
+            min="18"
+            max="50"
+          />
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-4" id="gender">
+
+        <label class="form-label">Gender</label>
+        <div class="row">
+     
+      <div class="col-md-6 mb-4">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="maleGender"
+            value="male"
+            checked
+          />
+          <label class="form-check-label" for="maleGender">Male</label>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="femaleGender"
+            value="female"
+            
+          />
+          <label class="form-check-label" for="femaleGender">Female</label>
+        </div>
+      </div>
+    </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="otherGender"
+            value="others"
+          />
+          <label class="form-check-label" for="otherGender">Other</label>
+        </div>
+
+      </div>
+    </div>
+    
+    <!--Phone Number-->
+    <div class="form-outline mb-4">
+      <label class="form-label">Phone Number</label>
+      <input type="tel" id="phoneNo" class="form-control" />
+    </div>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      
+      <label class="form-label" for="form3Example3">Email address</label>
+      <input type="email" id="email" class="form-control" />
+    </div>
+  
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      
+      <label class="form-label" for="form3Example4">Password</label>
+      <input type="password" id="password" class="form-control" />
+    </div>
+  
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input me-2" type="checkbox" value="checked" id="termsndcond" />
+      <label class="form-check-label" for="form2Example33">
+        Agree to our terms and conditions
+      </label>
+    </div>
+  
+    <!-- Submit button -->
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" id="register">Register</button>
+    </div><br>
+  
+    <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.html" class="fw-bold text-body"><u>Login here</u></a></p>
+
+    <p class="text-center text-muted mt-5 mb-0">Back to <a href="/index.html" class="fw-bold text-body"><u>Home Page</u></a></p>
+  </form>
+</div>
+
+<script src="firebase.js" type="module"></script>
+<script src="/components/spinner/spinner.js"></script>
+
+</body>
+</html>

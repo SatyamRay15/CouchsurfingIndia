@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--title-->
+    <title>Meghalata Tourism</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--linking css external file -->
+    <link rel="stylesheet" href="/main.css">
+
+    <!--linking fontawesome link-->
+    <script src="https://kit.fontawesome.com/1c15c31927.js" crossorigin="anonymous"></script>
+
+    <!--linking google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--linking bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!--linking firebase for database-->
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+  <script src="/popular_places/signout.js"></script>
+  <script src="/script.js"></script>
+
+  </head>
+
+  <!--Body Part-->
+  <body> 
+
+    <!--Navbar-->
+    
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <!-- Brand -->
+      <a class="navbar-brand" href="/tourism.html">Meghalaya Tourism</a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="/tourism.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/tourism.html#popular_places" class="nav-link">Popular Places</a>
+          </li>
+          <li class="nav-item">
+            <a href="/services/services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="/blog/blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contactUs/contact_us.html" class="nav-link">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="/signinAndsignout/signIn.html" style="text-decoration: none;">
+           <button style="width:auto;" class="btn-primary" id="login">Login</button>
+          </a>
+          </li>
+         <li class="nav-item">
+           <button style="width:auto;" class="btn-primary" id="logout" onclick="logout()">Logout</button>
+         </li>
+        </ul>
+      </div>
+    </nav>
+    <!--End of navbar-->
+
+     <!--Hero-Image-->
+     <section class="hero-wrap" style="background-image: url('/images/festival_main_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters main-text align-items-center">
+          <div class="col-lg-11 col-md-6 d-flex align-items-end">
+            <div class="text">
+              <h1 class="mb-4 text-capitalize">Meghalaya Festivals That You Must Experience in Your Next Visit!
+              </h1>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Hero-Image-->
+
+    <!--Details Section-->
+    <section class="about-section mt-5">
+      <div class="container">
+        <div class="row justify-content-center p-3">
+          <div class="col-lg-10 text-center heading-section mb-5 p-4" style="border: 5px solid gray;
+          margin: 0;">
+            <h2 class="text-black mb-2">Meghalaya Festivals</h2>
+            <p class="pt-4" >Meghalaya a small State in the North Eastern part of India is where you'll find more than just thunderclouds and a vast green landscape. Its people are the soul, and its song and dance the vital source of joy. This ancient people have perfected the art of life and is being passed on to its young. In Modern times though the people are engaged in secondary and tertiary activities, the festivals are always celebrated with great pomp and gaiety. </p>
+          </div>
+        </div>
+        <!--Numbering of details section-->
+        <div class="row mb-4 p-3" id="Shad Suk Mynsiem">
+          <div class="col-lg-7 col-md-6 order-lg-1">
+            <h2>1. Shad Suk Mynsiem </h2>
+            <p>The Shad Suk Mynsiem is celebrated in April. The rituals or ceremonies are conducted by individual family clans or the Khasi state (Hima). The dance is performed to signify the matrilineal and patrilineal structure of the Khasi society. The dance is performed by unmarried girls dressed in their traditional best, dancing in slow painful steps with coyness; while the man circles the women in their lashing out swords and whips. The significance of the dance is that a man is the protector of a woman's honour. The Dance is performed at the Weiking Grounds near the capital city of Shillong and other places. </p>
+          </div>
+          <div class="col-lg-5 col-md-6 order-lg-2">
+           <img src="/images/Shad_Suk.jfif" alt="Shad Suk Mynsiem Image" class="img-fluid" style="height: 250px;width: 100%;">
+          </div>
+          </div>
+          <!--===1-->
+
+          <div class="row mb-5 p-3" id="Nongkrem Festival">
+           <div class="col-lg-6 col-md-6 order-lg-2">
+              <h2>2. Nongkrem Festival </h2>
+              <p>The most important of festivals among the Khasis, the Nongkrem Festival is celebrated every year at Smit, 15 kms away from Shillong. It is an essential seat of the Hima Khyriem (Chief of Khyriem). The rituals are performed by the Syiem, the head of the Khasi state and ka Syiem Sad (head priestess) who is revered as the caretaker of the ceremonies and the people. The festival is celebrated for good harvest, peace and prosperity. People from all over the country and the world come to witness the celebration that is accompanied by young women performing the Shad Kynthei and the men circling them performing the Shad Mystieh, as a symbol of male power and protection over the women.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-1">
+              <img src="/images/Khasi_Girls.jpg" alt="Nongkrem Festival Image" class="img-fluid" style="height: 300px;width: 100%;">
+             </div>
+            </div>
+            <!--===2-->
+
+          <div class="row mb-4 p-3" id="Behdeinkhlam Festival">
+          <div class="col-lg-6 col-md-6 order-lg-1">
+            <h2>3. Behdeinkhlam Festival </h2>
+            <p>One of the most important festivals of the Jaintia people is the Behdeinkhlam Festival. It is celebrated by the people of the Niamtre religion. It is celebrated in July before the seed sowing season. The literal meaning of Behdeinkhlam is 'Chasing away the Plague'. Rituals and sacrifices are made by the priest accompanied by the beating of drums and flutes. Tall minarets are paraded to the holy ground and are then submerged in a river. Men, both old and young accompany the drums and flutes with dance while the women stand watch in their finest traditional and heavily decked in gold. The main event is the wrestling of a tree trunk that is chosen with care it is said to bring good luck to whoever touches it. The festival is celebrated every year at Jowai Town and other villages of the Jaintia hills. People from all over the country and the world come to witness this colourful and bewitching festival. </p>
+          </div>
+          <div class="col-lg-6 col-md-6 order-lg-2 ">
+           <img src="/images/behdeinkhlam.jpg" alt="Behdeinkhlam Festival Image " class="img-fluid" style="height: 350px;width: 100%;">
+          </div>
+          </div>
+          <!--===3-->
+          <div class="row mb-4 p-3" id="Shad Sukra">
+          <div class="col-lg-6 col-md-6 order-lg-2">
+            <h2>4. Shad Sukra </h2>
+            <p>The Shad Sukra is celebrated by the Jaintia people every year in the month of April or May. It is a celebration before the sowing season. Every Jaintia farmer waits for this festival before he can begin the sowing of seeds. Rituals and dance are accompanied by the drums and the flute to pray for a bountiful and fruitful season. Men and Women take part in the festivals in their traditional best, heavily decked in gold ornaments. One can go and witness this opulence of culture at Jowai Town, West Jaintia Hills. The town is situated 64 kms away from the capital city of Shillong. </p>
+          </div>
+          <div class="col-lg-6 col-md-6 order-lg-1">
+           <img src="/images/shad_sukra.jfif" alt="Shad Sukra Image" class="img-fluid" style="height: 260px;width: 100%;">
+          </div>
+          </div>
+          <!--===4-->
+          <div class="row mb-4 p-3" id="Wangala Festival">
+          <div class="col-lg-7 col-md-6 order-lg-1">
+            <h2>5. Wangala Festival </h2>
+            <p>The Wangala festival is one of the most important festivals of the Garo people. It is a post-harvest festival celebrated to mark the end of the agricultural year. It is a thanksgiving festival to the god of fertility, known as Misi-A-Gilpa-Saljong-Galapa.  Today it is popularly known as The Hundred Drums festival. Accompanied by the cries of the leading warrior, he leads the boys and girls to synchronised dance steps with hand and heads gesturing movements. The festival is celebrated from September and December at popular places across Garo Hills. If one wishes to witness the true traditional way of celebration by the Garo people who are still practising the old religion, they can be found at 'Songsarek' (animistic)  villages like Sadolpara in West Garo Hills. The modern more commercialised version of the festival is celebrated at Asasang village in West Garo Hills. The state-sponsored festivals attract local, national and foreign tourists who come to be entertained by the dances competitions, gorge themselves on local food and drinks made from fermented rice popularly called Rice Beer. </p>
+          </div>
+          <div class="col-lg-5 col-md-6 order-lg-2">
+           <img src="/images/WANGALA_DANCE.jpg" alt="Wangala Festival Image" class="img-fluid" style="height: 350px; width: 100%;">
+          </div>
+          </div>
+          <!--===5-->
+          <div class="row justify-content-center p-3">
+            <div class="col-lg-10 text-center heading-section mb-5 p-4" style="border: 5px solid gray;
+            margin: 0;">
+              <h2 class="text-black mb-2">Other Festivals</h2>
+              <p class="pt-4" >While the cultural and traditional festivals are the main attractions of Meghalaya, there are also other various modern day festivals advertised and sponsored by the State Government to attract a more varied group of visitors looking for more.</p>
+            </div>
+          </div>
+           <!--===-->
+
+          <div class="row mb-4 p-3" id="Strawberry Festival">
+          <div class="col-lg-7 col-md-6 order-lg-1">
+            <h2>6. Strawberry Festival</h2>
+            <p>Meghalaya has been hosting the Strawberry festival every year to promote farmers and food production from the fruit. The climate of the state is perfectly fit for the much-loved fruit. People throng to Umsning and Sohliya village in Ri-Bhoi district every February on Valentine's Day to enjoy lush and sweet strawberries. The festival is not only for families and loved ones to come and enjoy but to contribute to the growth of the local farmers and support their economy.</p>
+          </div>
+          <div class="col-lg-5 col-md-6 order-lg-2">
+           <img src="/images/strawberry_festival.jpg" alt="Strawberry Festival Image" class="img-fluid" style="height: 250px;width: 100%;">
+          </div>
+          </div>
+          <!--===6-->
+          
+          <div class="row mb-4 p-3" id="Bacardi NH7 Weekender">
+          <div class="col-lg-6 col-md-6 order-lg-2 ">
+            <h2>7. Bacardi NH7 Weekender</h2>
+            <p>Meghalaya is not complete without its music scene. The capital city of Shillong is dubbed as the Rock Capital of India for a reason. With the pleasant climate and a laid-back attitude of everyday life, the youth and the old indulge in music. The Bacardi NH7 Weekender is a yearly event that is much awaited by the music-loving crowd of the state. With the scenic beauty and immense hospitality of the local people, the festival is indeed a happy one. The active part of the festival by offering food and drink stalls offering the best of the local cuisine. It is a must visit by music lovers from all over the country and abroad. </p>
+          </div>
+          <div class="col-lg-6 col-md-6 order-lg-1">
+           <img src="/images/Audience_at_NH7_Weekender.jpg" alt="Bacardi NH7 Weekender Image" class="img-fluid" style="height: 300px;width: 100%;">
+          </div>
+          </div>
+          <!--===7-->
+          <div class="row mb-5 p-3" id="The Cherry Blossom Festival">
+            <div class="col-lg-6 col-md-6 order-lg-2 order-lg-1">
+              <h2>8. The Cherry Blossom Festival</h2>
+              <p>Meghalaya is home not only to unique horticultural crops and fruits but also of plants of medicinal and ornamental value, like the Cherry Blossom. But is the Cherry Blossom, also known as the Wild Himalayan Cherry, native to Meghalaya? In the autumn season when the State explodes in blooms of many hues, the soft pink bursts of Cherry Blossoms out-shine everything else and dominates the autumn scene. They are literally everywhere, drawing our attention to nature’s beauty.  See the image of cherry blossom tree in Ward’s Lake, Shillong.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 order-lg-2">
+             <img src="/images/cherry_blossom_festival_meghalaya.png" alt="Bacardi NH7 Weekender Image" class="img-fluid" style="height: 300px;width: 100%;">
+            </div>
+            </div>
+            <hr/>
+            <!--===7-->
+      <!--End of Numbering of details section-->
+    
+  <!--Tribe Section-->
+      <div class="row justify-content-center p-3">
+        <div class="col-lg-10 text-center heading-section mb-5 p-4" style="border: 5px solid gray;
+        margin: 0;">
+          <h2 class="text-black mb-2">Tribes Of Meghalaya</h2>
+          <p class="pt-4" >Meghalaya is divided into autonomous councils in the names of the three major matrilineal communities — Garo, Khasi and Jaintia. The minority tribes include the Hajong, Koch, Rabha, Boro and Mann.</p>
+        </div>
+      </div>
+    <!--Image grid section-->
+    <div class="row">
+      <div class="col-md-4 p-3" style="border: 5px solid gray;
+      margin: 0;">
+        <div class="thumbnail">
+            <img src="/images/khasi_tribes.jpg" alt="Khasi Tribes Image" style="width:100%">
+            <div class="caption">
+              <h4 class="text-center p-2">Khasi Tribes</h4>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-3" style="border: 5px solid gray;
+      margin: 0;">
+        <div class="thumbnail">
+            <img src="/images/garo_tribes.jpg" alt="Garo Tribe Picture" style="width:100%;height: 260px;">
+            <div class="caption">
+              <h4 class="text-center p-2">Garo Tribes</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 p-3" style="border: 5px solid gray;
+      margin: 0;">
+        <div class="thumbnail">
+         <img src="/images/jaintia_tribe.jpg" alt="Jaintia Tribes Image" style="width:100%">
+            <div class="caption">
+              <h4 class="text-center p-2">Jaintia Tribes</h4>
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr/>
+  </div>
+  <br/>
+  </div>
+  <!--End Of Tribe Section-->
+
+  <!--Climate Section-->
+  <div class="row justify-content-center p-5">
+    <div class="col-lg-10 text-center heading-section mb-5 p-4" style="border: 5px solid gray;
+    margin: 0;">
+      <h2 class="text-black mb-2">Climate Of Meghalaya</h2>
+      <p class="pt-4" >With average annual rainfall as high as 12,000 mm (470 in) in some areas, Meghalaya is the wettest place on earth. The western part of the plateau, comprising the Garo Hills region with lower elevations, experiences high temperatures for most of the year. The Shillong area, with the highest elevations, experiences generally low temperatures. The maximum temperature in this region rarely goes beyond 28 °C (82 °F), whereas sub-zero winter temperatures are common.</p>
+      <a href="https://en.wikipedia.org/wiki/Meghalaya#Climate">Read More On Wikipedia</a>
+    </div>
+  </div>
+ <!--End Of Climate Section-->
+
+
+          
+        </div>
+        
+        </section>
+        
+    <!--End Of Details Section-->
+
+    <!--Footer Section-->
+<footer class="bg-secondary p-4 text-white">
+  <div class="container  p-5">
+    
+    <div class="row">
+      <div class="col-lg-4 ">
+        <ul>
+          <li><b>Meghalaya Tourist Spots</b></li>
+          <li><a href="/popular_places/krangsuri_falls.html" style="text-decoration: none;color: white;">Krangsuri Falls</a></li>
+          <li><a href="/popular_places/living_root_bridge.html" style="text-decoration: none;color: white;">Cherrapunjee</a> </li>
+          <li><a href="/popular_places/umiam_lake.html" style="text-decoration: none;color: white;"> Umiam Lake</a></li>
+          <li><a href="/popular_places/dawki.html" style="text-decoration: none;color: white;">Dawki</a> </li>
+          <li><a href="/popular_places/laitlum.html" style="text-decoration: none;color: white;">Laitlum</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>Book A Trip</b>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Best Deals on Holidays</a>
+          </li>
+          <li>
+            <a href="services/services.html" style="text-decoration: none;color: white;">Services</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>You can follow Meghalaya on:</b>
+          </li>
+          <br>
+          <li>
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <a href="https://www.facebook.com/Meghtourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-facebook-square fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-xm-4">
+                <a href="https://www.instagram.com/meghalayatourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-instagram fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <a href="https://twitter.com/mesmerisingmegh?lang=en" style="text-decoration: none;color: white;">
+                  <i class="fa fa-twitter fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-dark">© 2020 Copyright: Meghalaya Tourism
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--End Of Footer Section-->
+
+
+    </body>
+</html>

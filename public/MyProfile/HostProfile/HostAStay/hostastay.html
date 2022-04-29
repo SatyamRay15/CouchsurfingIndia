@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/c7f7a3d338.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+
+  <link rel="stylesheet" href="/components/spinner/spinner.css">
+
+  <link rel="stylesheet" type="text/css" href="updatingDetails.css">
+  <style>
+    body{
+     /* display: flex; */
+        justify-content: right  ;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: #3998D2;
+      background-size: cover;
+      margin-top: 5px;
+    }
+    .form{
+      padding: 40px;
+    }
+    .main{
+        background-color: whitesmoke;
+        margin: 2%; 
+        border-radius: 10px;
+        display: block;
+    }
+    
+
+  </style>
+</head>
+<body style="margin:0;">
+  
+  <div class="main card">
+  <form class="form">
+    <div class="p-3">
+      <h2 class="text-uppercase text-center mb-5">HOST A STAY </h2>
+    </div>
+    <hr style="border: 1px solid gray;">
+    <!-- <br> -->
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <label for="" class="text-danger">My Preferences</label><br/>
+    
+    <div class="row">
+      
+      <div class="col-md-6 mb-4 col-6">
+        <div class="d-flex flex-row" style="padding: 10px;">
+          <label for="" class="text-success">Available Nights to Host</label><br/>
+          <div class="row">
+            <div class="col-md-2 col-sm-2">
+              <input class="form-check-input days" type="checkbox" value="Sunday" id="sun" />
+              <label class="form-check-label" for="form2Example33">
+                Sun
+              </label>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <input class="form-check-input days" type="checkbox" value="Monday" id="mon" />
+              <label class="form-check-label" for="form2Example33">
+                Mon
+              </label>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <input class="form-check-input days" type="checkbox" value="Tuesday" id="tue" />
+              <label class="form-check-label" for="form2Example33">
+                Tue
+              </label>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <input class="form-check-input days" type="checkbox" value="Wednesday" id="wed" />
+              <label class="form-check-label" for="form2Example33">
+                Wed
+              </label>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <input class="form-check-input days" type="checkbox" value="Thursday" id="thur" />
+              <label class="form-check-label" for="form2Example33">
+                Thur
+              </label>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <input class="form-check-input days" type="checkbox" value="Friday" id="fri" />
+              <label class="form-check-label" for="form2Example33">
+                Fri
+              </label>
+            </div>
+            <div class="col-md-2 col-sm-2">
+              <input class="form-check-input days" type="checkbox" value="Saturday" id="sat" />
+              <label class="form-check-label" for="form2Example33">
+                Sat
+              </label>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="form-outline" style="padding: 10px;">
+          
+          <label class="form-label" for="occupation">Maximum Number Of Guests</label>
+          <input type="number" id="noOfGuest" class="form-control" required placeholder="e.g- 2, etc."/>
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-4 col-6">
+
+        <div class="form-outline" style="padding: 10px;">
+          <label class="form-label" for="education">Preferred Gender to Host</label>
+          <div class="row">
+       
+        <div class="col-md-6 mb-4">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="AnyGender"
+              value="Any Gender"
+              checked
+            />
+            <label class="form-check-label" for="otherGender">Any</label>
+          </div>
+          <div class="form-check form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="maleGender"
+              value="Male"
+            />
+            <label class="form-check-label" for="maleGender">Male</label>
+          </div>
+          
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="form-check form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="femaleGender"
+              value="Female"
+              
+            />
+            <label class="form-check-label" for="femaleGender">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="otherGender"
+              value="Others"
+            />
+            <label class="form-check-label" for="otherGender">Others</label>
+          </div>
+        </div>
+      </div>
+         
+        </div>
+  
+
+      </div>
+    </div>
+
+   
+    
+    <div class="row">
+      <div class="col-md-6" >
+        <div class="form-outline" style="padding: 10px;">
+           <label for="">Children, Pets, Smoking</label><br/>
+        <div class="flex">
+          <input class="form-check-input cps" type="checkbox" value="I am Kids Friendly" id="kids" />
+      <label class="form-check-label">
+        Kids Friendly
+      </label><br/>
+      <input class="form-check-input cps" type="checkbox" value="I am Pets Friendly" id="friends" />
+      <label class="form-check-label">
+        Pets Friendly
+      </label><br/>
+      <input class="form-check-input cps" type="checkbox" value="Smoking is Allowed" id="smoking" />
+      <label class="form-check-label">
+        Smoking is Allowed
+      </label>
+        </div>
+       
+        </div>
+        </div>
+        <div class="col-md-6" >
+          <div class="form-outline" style="padding: 10px;">
+             <label for="">Food Preferences</label><br/>
+          <div class="d-flex">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="foodPreference"
+                id="Veg"
+                value="Vegetarian"
+              />
+              <label class="form-check-label" for="maleGender">Vegetarian</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="foodPreference"
+                id="NonVeg"
+                value="Non-Vegetarian"
+              />
+              <label class="form-check-label" for="maleGender">Non-Vegetarian</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="foodPreference"
+                id="Both"
+                value="Both Veg and Non-Veg"
+              />
+              <label class="form-check-label" for="maleGender">Both</label>
+          </div>
+         
+            </div>
+          </div>
+        </div>
+    </div>
+    <hr style="border: 1px solid gray;">
+    
+    <label for="" class="text-danger">My Home</label><br/>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-outline" style="padding: 10px;">
+          <label for="">Sleeping Arrangements</label>
+          <select name="sleepingArrangements" id="sleeping">
+            <option value="Shared Bed">Shared Bed</option>
+            <option value="Shared Room">Shared Room</option>
+            <option value="Living Room">Living Room</option>
+            <option value="Private Room">Private Room</option>
+          </select> 
+        </div>
+        <div class="form-outline" style="padding: 10px;">
+          <label for="">Description Of Sleeping Arrangements</label><br/>
+          <textarea name="textArea" id="descOfSleeping" cols="80" rows="5" style="max-width: 100%;" ></textarea>
+        </div>
+        <div class="form-outline" style="padding: 10px;">
+          <label for="">What Can I Share With Guests</label><br/>
+          <textarea name="" id="shareWithGuest" cols="80" rows="5" style="max-width: 100%;"></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row" style="padding: 10px;">
+            <label for="">Miscellaneous</label><br/>
+            <div class="col-md-6">
+              <div class="form-outline">
+                <input class="form-check-input misc" type="checkbox" value="Yes" id="pet" />
+              <label class="form-check-label">
+                I have a pet
+              </label>
+              </div>
+              <div class="form-outline">
+                <input class="form-check-input misc" type="checkbox" value="Yes" id="smok" />
+              <label class="form-check-label" for="form2Example33">
+                Smoking at Home is allowed
+              </label>
+              </div>
+                
+              </div>
+              <div class="col-md-6">
+                <div class="form-outline">
+                   <input class="form-check-input misc" type="checkbox" value="Yes" id="Ihavekids" />
+                  <label class="form-check-label" for="form2Example33">
+                    I have kids at home
+                  </label>
+                </div>
+                <div class="form-outline">
+                  <input class="form-check-input misc" type="checkbox" value="Yes" id="weelchair" />
+                  <label class="form-check-label">
+                    Weelchair Accessible
+                  </label>
+                </div>
+               </div>
+            </div>
+        </div>
+        <div class="form-outline" style="padding: 10px;">
+          <label for="">Guests Travelling Arrangements</label><br/>
+          <textarea name="travelling" id="guestTravelling" cols="80" rows="3" style="max-width: 100%;"></textarea>
+        </div>
+        <div class="form-outline" style="padding: 8px;">
+          <label for="">Additional Information</label><br/>
+          <textarea name="Additional Information" id="AdditionalInfo" cols="80" rows="5" style="max-width: 100%;"></textarea>
+        </div>
+    </div>
+    
+  
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input me-2" type="checkbox" value="Accepted" id="termsndcond" checked/>
+      <label class="form-check-label" for="form2Example33">
+        Agree to our terms and conditions
+      </label>
+    </div>
+  
+    <!-- Submit button -->
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-block btn-lg gradient-custom-4 text-body" id="submitDetails" style="background-color: #3998D2;color: white;">Submit</button>
+    </div><br>
+
+    <p class="text-center text-muted mt-5 mb-0">Back to <a href="/MyProfile/HostProfile/host.html" class="fw-bold text-body"><u>MyHost Page</u></a></p>
+  </form>
+</div>
+
+<script src="hostastay.js" type="module"></script>
+<script src="/config.js" type="module"></script>
+<script src="/components/spinner/spinner.js"></script>
+
+</body>
+</html>

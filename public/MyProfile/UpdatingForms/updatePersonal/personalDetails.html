@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Personal Details</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+
+  <link rel="stylesheet" href="/components/spinner/spinner.css">
+
+  <link rel="stylesheet" type="text/css" href="/updatingDetails.css">
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0px;
+      background-image: url(/images/My_profile_images/personal.jpg);
+      backdrop-filter: blur(10px);
+      background-size: cover;
+      margin-top: 5px;
+    }
+    .form{
+      padding: 50px;
+    }
+    .main{
+        background-color: whitesmoke;
+        border-radius: 30px;
+        border: 3px solid black;
+    }
+    input, label {
+  margin: 5px 5px;
+}
+
+  </style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
+  <div class="main" id="myDiv">
+  <form class="form">
+    <div class="p-3">
+      <h2 class="text-uppercase text-center mb-5">Update Details About Yourself</h2>
+    </div>
+    <br>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="container">
+      <div class="row">
+      <div class="col-md-6 mb-4">
+
+        <div class="form-outline">
+          <label class="form-label" for="aboutMe">About Me</label>
+          <textarea name="aboutMe" id="aboutMe" rows="4" class="form-control" placeholder="Write something about yourself..."></textarea>
+        </div>
+        <div class="form-outline">
+          <label class="form-label" for="myInterests">My Interests</label>
+          <textarea name="myInterests" id="myInterests" rows="4" class="form-control" placeholder="Write your interests like reading, writing, adventure, road trips, etc,..."></textarea>
+        </div>
+
+        <div class="form-outline">
+          <label class="form-label" for="teachLearnShare">Teach, Learn, Share</label>
+          <textarea name="teachLearnShare" id="teachLearnShare" rows="4" class="form-control" placeholder="Write about something that you can teach other or learn from others or what can you share..."></textarea>
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-4">
+
+        <div class="form-outline">
+          <label class="form-label" for="whyCouch">Why I'm on Couchsurfing?</label>
+          <textarea name="whyCouch" id="whyCouch" rows="4" class="form-control" placeholder="Why do you want to start couchsurfing? Write something about it..."></textarea>
+        </div>
+
+        <div class="form-outline">
+          <label class="form-label" for="amazingThing">One Amazing Thing I've Done</label>
+          <textarea name="amazingThing" id="amazingThing" rows="4" class="form-control" placeholder="Write something about your amazing experience so that people can connect you better..."></textarea>
+        </div>
+
+        <div class="form-outline">
+          <label class="form-label" for="statesVisited">States I have visited till now</label>
+          <textarea name="statesVisited" id="statesVisited" rows="4" class="form-control" placeholder="Mention the states you have visited and your experience..."></textarea>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+    
+  
+    <!-- Checkbox -->
+    <div class="form-check d-flex justify-content-center mb-4">
+      <input class="form-check-input me-2" type="checkbox" value="checked" id="termsndcond" checked/>
+      <label class="form-check-label" for="form2Example33">
+        Agree to our terms and conditions
+      </label>
+    </div>
+  
+    <!-- Submit button -->
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-block btn-lg gradient-custom-4 text-body" id="updatePersonalDetails" style="background-color: #3998D2;color: white;">Update</button>
+    </div><br>
+
+    <p class="text-center text-muted mt-5 mb-0">Back to <a href="/MyProfile/myprofile.html" class="fw-bold text-body"><u>MyProfile Page</u></a></p>
+  </form>
+</div>
+
+<script src="personalDetails.js" type="module"></script>
+<script src="/components/spinner/spinner.js"></script>
+
+</body>
+</html>

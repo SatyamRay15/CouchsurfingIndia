@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    
+    <!--linking css external file -->
+    <link rel="stylesheet" href="/main.css">
+
+    <!--linking bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!--linking firebase for database-->
+     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+     
+    <!--linking fontawesome link-->
+    <script src="https://kit.fontawesome.com/1c15c31927.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="/tourism.html">Meghalaya Tourism</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/tourism.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/tourism.html#popular_places" class="nav-link">Popular Places</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="/blog/blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item active">
+              <a href="contact_us.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/signinAndsignout/signIn.html" style="text-decoration: none;">
+             <button style="width:auto;" class="btn-primary" id="login">Login</button>
+            </a>
+            </li>
+           <li class="nav-item">
+             <button style="width:auto;" class="btn-primary" id="logout" onclick="logout()">Logout</button>
+           </li>
+          </ul>
+        </div>
+      </nav>
+      <!--End of navbar-->
+
+    <div class="container">
+      <div class="card">
+        <div class="card-body bg-secondary">
+          <p class="pt-4 md-4"><b><center><h1>
+            Contact Us on this Number: 8787541725 
+            <br>
+            You can also contact us on this e-mail: satyamray15@gmail.com
+        </p></b></center>
+            </h1>
+        </div>
+      </div>
+        
+    </div>
+
+    <!--Footer Section-->
+<footer class="bg-secondary p-4 text-white">
+  <div class="container  p-5">
+    
+    <div class="row">
+      <div class="col-lg-4 ">
+        <ul>
+          <li><b>Meghalaya Tourist Spots</b></li>
+          <li><a href="/popular_places/krangsuri_falls.html" style="text-decoration: none;color: white;">Krangsuri Falls</a></li>
+          <li><a href="/popular_places/living_root_bridge.html" style="text-decoration: none;color: white;">Cherrapunjee</a> </li>
+          <li><a href="/popular_places/umiam_lake.html" style="text-decoration: none;color: white;"> Umiam Lake</a></li>
+          <li><a href="/popular_places/dawki.html" style="text-decoration: none;color: white;">Dawki</a> </li>
+          <li><a href="/popular_places/laitlum.html" style="text-decoration: none;color: white;">Laitlum</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>Book A Trip</b>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Best Deals on Holidays</a>
+          </li>
+          <li>
+            <a href="services/services.html" style="text-decoration: none;color: white;">Services</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>You can follow Meghalaya on:</b>
+          </li>
+          <br>
+          <li>
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <a href="https://www.facebook.com/Meghtourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-facebook-square fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-xm-4">
+                <a href="https://www.instagram.com/meghalayatourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-instagram fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <a href="https://twitter.com/mesmerisingmegh?lang=en" style="text-decoration: none;color: white;">
+                  <i class="fa fa-twitter fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-dark">© 2020 Copyright: Meghalaya Tourism
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--End Of Footer Section-->
+<script src="/script.js"></script>
+<script>
+  
+  window.onload = function loadfun(){
+      firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+          // User is signed in.
+          console.log(user+"there is a user");
+          document.getElementById("logout").style.display = "block";
+          document.getElementById("login").style.display = "none";
+        } else {
+          // No user is signed in.
+          console.log("There is no user");
+          document.getElementById("login").style.display = "block";
+          document.getElementById("logout").style.display = "none";
+        }
+      }
+      )
+    }
+</script>
+</body>
+
+</html>

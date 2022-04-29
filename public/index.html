@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--title-->
+    <title>Couchsurfing</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--linking css external file -->
+    <link rel="stylesheet" href="/main.css">
+
+    <!--linking fontawesome link-->
+    <script src="https://kit.fontawesome.com/1c15c31927.js" crossorigin="anonymous"></script>
+
+    <!--linking google fonts-->
+    <script src="https://kit.fontawesome.com/c7f7a3d338.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--linking bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/components/spinner/spinner.css">
+    <script src="/components/spinner/spinner.js"></script>
+
+  </head>
+
+  <!--Body Part-->
+  <body onload="myFunction()" > 
+    <div id="loader"></div>
+    <!--Navbar-->
+    <section id="myDiv">
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html"><i><b>COUCHSURFING</b></i><img src="/images/Indian-Flag-Designs-PNG_ndvclp.png " width="100" height="auto"></a>
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+         
+          <li class="nav-item">
+            <a href="#popular_places" class="nav-link">Places</a>
+          </li>
+          <li class="nav-item">
+            <a href="/services/services.html" class="nav-link">Travellers</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog/blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactUs/contact_us.html" class="nav-link">How it Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="login/signup.html" style="text-decoration: none;" id="signup">
+              <button style="width:auto;border-radius: 5px;background-color: #73A7BC;" class="btn-green">  SignUp <i class="fa-solid fa-user-plus"></i></button>
+         
+          </a>
+          </li>
+          <li class="nav-item">
+            <a href="/login/login.html" style="text-decoration: none;" id="login1">
+              <button style="width:auto;border-radius: 5px;margin-left: 5px;background-color: #4C5270;" class="btn-primary">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+          </a>
+          </li>
+         </li>
+        </ul>
+      </div>
+    </nav>
+    <!--End of navbar-->
+
+    <!--Hero-Image-->
+  <div>
+    <section class="hero-wrap" style="background-image: url('images/Meghalaya\ \(2\).jpg');height: 600px;">
+      <div class="container main-text text-center">
+          <img src="/images/main_logo.png" width="200" height="auto" style="border-radius:20px;margin-bottom: 30px;">
+          <br/>
+          <!--this is for hero section-->
+          <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block" src="/images/Couchsurfing-Logo-1-1024x372.jpg" alt="Third slide" style="width: 100%;height: 300px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-thumbnail" src="/images/quoute1.jpg" alt="Second slide" style="width: 100%;height: 300px;object-fit: fill;color: gray;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-thumbnail" src="/images/gray.jpg" alt="First slide" style="width: 100%;height: 300px;object-fit: fill;">
+                <div>
+                  <h3 class="first-txt" style="position:absolute;bottom:130px;left:90px;">
+                  "All Journeys Have Secret Destinations Of Which The Traveller Is Unaware"
+              </h3>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6" style="backdrop-filter: blur(4px); padding:20px;border-radius:20px;border:3px solid black">
+                <h1>Welcome To The World Of Couchsurfing</h1>
+              </div>
+              <div class="col-md-6">
+
+              </div>
+             
+            </div>
+            
+          </div>
+      </div>
+    </section>
+  </div>
+    <!--End of Hero-Image-->
+    <hr/>
+   
+
+  <!--Welcome/about section-->
+    <section class="about-section mt-5">
+      <div class="container">
+        <div class="row justify-content-center p-2">
+          <div class="col-lg-6 text-center heading-section mb-5 p-4" style="border: 5px solid gray;
+          margin: 0;">
+            <h2 class="text-black mb-2">Some Unique Places That You Should Visit</h2>
+          </div>
+        </div><!--Welcome Details-->
+        <div class="row img-wrap mb-5 mb-lg-0">
+          <div class="12">
+            <div class="row">
+              <div class="mb-4 margin-lg-0 col-lg-6 order-lg-2">
+                <a href="popular_places/living_root_bridge.html" class="effect">
+                  <img src="images/meghalaya_root.jpg" alt="meghalaya" class="img-fluid p-2">
+                </a>
+              </div>
+              <div class="col-lg-5 text-lg-right align-self-center order-lg-1 ml-3">
+                <h2 class="text-black">Living Root Bridge</h2>
+                <p class="mb-4">
+                  A living root bridge is a type of simple suspension bridge formed of living plant roots by tree shaping.
+                </p>
+                <a href="popular_places/living_root_bridge.html" class="btn btn-about">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------->
+        <div class="row img-wrap mb-5 mb-lg-0">
+          <div class="12">
+            <div class="row">
+              <div class="mb-4 margin-lg-0 col-lg-6 ">
+                <a href="popular_places/shillong_peak.html" class="effect">
+                  <img src="images/shillong-peak.jpg" alt="meghalaya" class="img-fluid p-2">
+                </a>
+              </div>
+              <div class="col-lg-5 align-self-center order-lg-1 ml-3">
+                <h2 class="text-black">Shillong Peak</h2>
+                <p class="mb-4">
+                  A picnic spot, 10 km from the city, 1966 m above sea level, offers a panoramic view of the scenic countryside and is the highest point in the state.
+                </p>
+                <a href="popular_places/shillong_peak.html" class="btn btn-about">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------->
+        <div class="row img-wrap mb-5 mb-lg-0">
+          <div class="12">
+            <div class="row">
+              <div class="mb-4 margin-lg-0 col-lg-6 order-lg-2">
+                <a href="popular_places/umiam_lake.html" class="effect">
+                  <img src="images/hero2.jpg" alt="meghalaya" class="img-fluid p-2">
+                </a>
+              </div>
+              <div class="col-lg-5 text-lg-right align-self-center order-lg-1 ml-3">
+                <h2 class="text-black">Umaim Lake</h2>
+                <p class="mb-4">
+                  Umiam Lake (locally known as Dam sait) is a reservoir in the hills 15 km (9.3 mi) north of Shillong in the state of Meghalaya, India. It was created by damming the Umiam River in the early 1960s. The principal catchment area of the lake and dam is spread over 220 square km.
+                </p>
+                <a href="popular_places/umiam_lake.html" class="btn btn-about">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------->
+        <div class="row img-wrap mb-5 mb-lg-0">
+          <div class="12">
+            <div class="row">
+              <div class="mb-4 margin-lg-0 col-lg-6 ">
+                <a href="popular_places/dawki.html" class="effect">
+                  <img src="images/Meghalaya (1).jpg" alt="meghalaya" class="img-fluid p-2">
+                </a>
+              </div>
+              <div class="col-lg-5 align-self-center order-lg-1 ml-3">
+                <h2 class="text-black">Dawki</h2>
+                <p class="mb-4">
+                  Dawki or Dauki is a town in West Jaintia Hills district, Meghalaya, India.
+                </p>
+                <a href="popular_places/dawki.html" class="btn btn-about">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------->
+        <div class="row img-wrap mb-5 mb-lg-0">
+          <div class="12">
+            <div class="row">
+              <div class="mb-4 margin-lg-0 col-lg-6 order-lg-2">
+                <a href="popular_places/krangsuri_falls.html" class="effect">
+                  <img src="images/Meghalaya-3.jpg" alt="meghalaya" class="img-fluid p-2">
+                </a>
+              </div>
+              <div class="col-lg-5 text-lg-right align-self-center order-lg-1 ml-3">
+                <h2 class="text-black">Krangsuri Falls</h2>
+                <p class="mb-4">
+                  Krang Suri is blessed with shimmering blue waters and sparkling sunlight. This heady mixture of nature is sometimes known to create a rainbow. It's truly a magical pool in nature's wonderland.
+                </p>
+                <a href="popular_places/krangsuri_falls.html" class="btn btn-about">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------->
+        <div class="row img-wrap mb-5 mb-lg-0">
+          <div class="12">
+            <div class="row">
+              <div class="mb-4 margin-lg-0 col-lg-6 ">
+                <a href="popular_places/laitlum.html" class="effect">
+                  <img src="images/Laitlum-Copy.jpg" alt="meghalaya" class="img-fluid p-2">
+                </a>
+              </div>
+              <div class="col-lg-5 align-self-center order-lg-1 ml-3">
+                <h2 class="text-black">Laitlum</h2>
+                <p class="mb-4">
+                  Perched in the East Khasi Hills of Shillong, Laitlum Canyons is a little-explored haunt of the mountainous state of Meghalaya. Laitlum translates to ‘end of hills’ and this sublimely beautiful hilltop appears to be true to its name.
+                </p>
+                <a href="popular_places/laitlum.html" class="btn btn-about">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------->
+      </div>
+    </section>
+<!--========-->
+
+<!--Popular Places-->
+<section>
+  <div class="popular section-bg img-effect mt-5" id="popular_places">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="section-title text-center">
+            <br/>
+            <h1 class="text-white">
+              Trending Places for CouchSurfing
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--===-->
+  <div class="all-image">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-md-5">
+          <div class="single-img">
+            <div class="img-thumb">
+              
+              <img src="images/wardslake.jpg" alt="Wards Lake image">
+              
+            </div>
+            <a href="popular_places/wards_lake.html">
+            <div class="img-hover">
+              <div class="title">
+                <h3>Wards Lake</h3>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <!--===-->
+        <div class="col-xl-7 col-md-7">
+          <div class="single-img">
+            <div class="img-thumb">
+              <img src="images/golflink.jpg" alt="Golf Link image">
+            </div>
+            <a href="popular_places/golf_link.html">
+            <div class="img-hover">
+              <div class="title">
+                <h3>Golf Link</h3>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <!--===-->
+        <div class="col-xl-4 col-md-6 col-lg-4">
+          <div class="single-img">
+            <div class="img-thumb">
+              <img src="images/ladyhydrapark.jpg" alt="Lady Hydra Park image">
+            </div>
+            <a href="popular_places/lady_hydra_park.html">
+            <div class="img-hover">
+              <div class="title">
+                <h3>Lady Hydra Park</h3>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <!--===-->
+        <div class="col-xl-4 col-md-6 col-lg-4">
+          <div class="single-img">
+            <div class="img-thumb">
+              <img src="images/don-bosco-center-for.jpg" alt="Don Bosco Museum image">
+            </div>
+            <a href="popular_places/donbosco_museum.html">
+            <div class="img-hover">
+              <div class="title">
+                <h3>Don Bosco Museum</h3>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <!--===-->
+        <div class="col-xl-4 col-md-12 col-lg-4">
+          <div class="single-img">
+            <div class="img-thumb">
+              <img src="images/don-bosco-church.jpg" alt="Don Bosco Church image">
+            </div>
+            <a href="popular_places/donbosco_church.html">
+            <div class="img-hover">
+              <div class="title">
+                <h3>Don Bosco Church</h3>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <!--===-->
+      </div>
+    </div>
+    <hr/>
+  </div>
+  
+</section>
+
+<!--End of Popular Places-->
+
+<!--Festivals and Culture-->
+<section>
+  <!--Heading section-->
+  <div class="container">
+    <div class="row justify-content-center p-3">
+      <div class="col-lg-6 text-center heading-section mb-4 p-4 " style="border: 5px solid gray;
+      margin: 0;">
+        <h2 class="text-black mb-2">Meghalaya Festivals</h2>
+        <p>Meghalaya a small State in the North Eastern part of India is where you'll find more than just thunderclouds and a vast green landscape. Its people are the soul, and its song and dance the vital source of joy. This ancient people have perfected the art of life and is being passed on to its young. In Modern times though the people are engaged in secondary and tertiary activities, the festivals are always celebrated with great pomp and gaiety. </p>
+      </div>
+    </div>
+    <!--Image grid section-->
+    <div class="row p-2">
+      <div class="col-md-4 p-3" style="border: 5px solid gray;
+      margin: 0;">
+        <div class="thumbnail">
+          <a href="festivals/festivals_culture.html#Shad Suk Mynsiem" style="text-decoration: none;">
+            <img src="images/Shad_Suk.jfif" alt="Shad Suk Mynsiem" style="width:100%">
+            <div class="caption">
+              <h5 class="text-center p-2">Shad Suk Mynsiem </h5>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 p-3" style="border: 5px solid gray;
+      margin: 0;">
+        <div class="thumbnail">
+          <a href="festivals/festivals_culture.html#Nongkrem Festival" style="text-decoration: none;">
+            <img src="images/Khasi_Girls.jpg" alt="Nongkrem Festival Picture" style="width:100%">
+            <div class="caption">
+              <h5 class="text-center p-2">Nongkrem Festival</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 p-3" style="border: 5px solid gray;
+      margin: 0;">
+        <div class="thumbnail">
+          <a href="festivals/festivals_culture.html#Behdeinkhlam Festival" style="text-decoration: none;">
+            <img src="images/behdeinkhlam.jpg" alt="Behdeinkhlam Festival Image" style="width:100%">
+            <div class="caption">
+              <h5 class="text-center p-2">Behdeinkhlam Festival</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="festivals/festivals_culture.html" class="p-2" style="text-decoration: none;">
+      <button type="button" class="btn btn-primary btn-block">See All Festivals And Tribes Of Meghalaya</button>
+    </a>
+  </div>
+  <br/>
+  
+    </div>
+   
+</section>
+<!--End of Festivals and Culture-->
+
+
+<!--Footer Section-->
+<footer class="bg-secondary p-4 text-white">
+  <div class="container  p-5">
+    
+    <div class="row">
+      <div class="col-lg-4 ">
+        <ul>
+          <li><b>Trending Places to Visit</b></li>
+          <li><a href="/popular_places/krangsuri_falls.html" style="text-decoration: none;color: white;">Krangsuri Falls</a></li>
+          <li><a href="/popular_places/living_root_bridge.html" style="text-decoration: none;color: white;">Cherrapunjee</a> </li>
+          <li><a href="/popular_places/umiam_lake.html" style="text-decoration: none;color: white;"> Umiam Lake</a></li>
+          <li><a href="/popular_places/dawki.html" style="text-decoration: none;color: white;">Dawki</a> </li>
+          <li><a href="/popular_places/laitlum.html" style="text-decoration: none;color: white;">Laitlum</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>Couchsurfing</b>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Host a stay</a>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Book a stay</a>
+          </li>
+          <li>
+            <a href="/bookingAfullTrip/bookingAfullTrip.html" style="text-decoration: none;color: white;">Write a Blog</a>
+          </li>
+          <li>
+            <a href="services/services.html" style="text-decoration: none;color: white;">Services</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul>
+          <li>
+            <b>You can Connect with us:</b>
+          </li>
+          <br>
+          <li>
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <a href="https://www.facebook.com/Meghtourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-facebook-square fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4 col-xm-4">
+                <a href="https://www.instagram.com/meghalayatourism/" style="text-decoration: none;color: white;">
+                  <i class="fa fa-instagram fa-3x"></i>
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <a href="https://twitter.com/mesmerisingmegh?lang=en" style="text-decoration: none;color: white;">
+                  <i class="fa fa-twitter fa-3x"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-dark">© 2022 Copyright: CouchSurfing India
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--End Of Footer Section-->
+
+
+<script src="main.js" type="module"></script>
+    </section>
+  </body>
+</html>

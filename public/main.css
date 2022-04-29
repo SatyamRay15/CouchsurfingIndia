@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Code Pro", monospace;
+  overflow-x: hidden;
+}
+/*=====Navbar===*/
+.bg {
+  background: #007cb3;
+}
+.main-navbar-light {
+  background: transparent !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  top: 10px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: green;
+  color: white;
+  padding: 6px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 100%; */
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/*=====End of Navbar====*/
+
+/*Login Form Styling*/
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-radius: 10px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 36px;
+}
+
+/*=====Hero Section====*/
+.hero-wrap {
+  width: 100%;
+  height: 720px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 0;
+}
+.overlay {
+  background: #00000061;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-wrap .main-text {
+  height: 600px !important;
+}
+.main-text h1 {
+  font-size: 60px;
+  color: #fff;
+  line-height: 1.1;
+  font-weight: bold;
+}
+.main-text p {
+  line-height: 1.5;
+  color: #fff;
+}
+.btn-hero {
+  background: #030157 !important;
+  color: #fff !important;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 3s infinite;
+  animation-direction: normal;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  padding: 5px 17px;
+}
+@keyframes skew {
+  0% {
+    transform: skew(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+/*=====End of Hero Section====*/
+
+/*====Welcome Section====*/
+.heading-section h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.img-wrap .effect {
+  position: relative;
+  margin-bottom: 0;
+  display: block;
+}
+.img-wrap .effect:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: #011525;
+  transition: 0.3s all ease-in-out;
+}
+.img-wrap:hover .effect:after {
+  right: -10px;
+  bottom: -10px;
+  position: absolute;
+}
+.btn-about {
+  background: #030157 !important;
+  color: #fff !important;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 3s infinite;
+  animation-direction: normal;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  padding: 5px 17px;
+}
+@keyframes skew {
+  0% {
+    transform: skew(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+/*====End Of Welcome Section====*/
+
+/*========Popular Places==========*/
+.popular {
+  background-image: url(images/background_popular_places_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 340px;
+}
+
+.all-image {
+  padding-bottom: 75px;
+  position: relativ e;
+  margin-top: -295px;
+}
+.all-image .single-img {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.all-image .single-img .img-thumb {
+  height: 410px;
+}
+.all-image .single-img .img-thumb img {
+  width: 100%;
+  height: 100%;
+}
+.all-image .single-img .img-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(2, 58, 110, 0.6);
+  transform: translateX(-50%);
+  transition: 0.5s;
+  opacity: 0;
+  overflow: hidden;
+}
+.all-image .single-img .img-hover .title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.all-image .single-img .img-hover h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.all-image .single-img:hover .img-hover {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+/*========End of Popular Places==========*/
+
+ul {
+  list-style-type: none;
+}
+
+h5 {
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.review_head {
+  margin-left: 30px;
+}
+
+.container_review {
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contact-button {
+  background-color: goldenrod;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  margin: 80px;
+  margin-top: 200px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.contact-button:hover {
+  color: white;
+}
+
+.Book-On_Call {
+  background-color: lightskyblue;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  margin: 80px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Book-On_Call:hover {
+  color: #fefefe;
+}
