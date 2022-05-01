@@ -25,9 +25,10 @@ onAuthStateChanged(auth,(user)=>{
     const uid = user.uid;
     // ...
     console.log(user);
-    document.getElementById('login1').innerHTML=' <button style="width:auto;margin-left:5px;border-radius:5px;background-color: #EF7C8E" id="logout1">Logout</button>';
+    document.getElementById('login1').innerHTML='<button style="width:auto;margin-left:5px;border-radius:5px;background-color: #EF7C8E;border: 1px solid gray;" id="logout1" class="btn">Logout <i class="fa-solid fa-right-from-bracket"></i></button>';
 
-    document.getElementById('signup').innerHTML=' <a href="/MyProfile/myprofile.html"><button style="width:auto;border-radius:5px;background-color: #2E765E;" >My Profile</button></a>';
+    document.getElementById('signup').innerHTML=' <a href="/MyProfile/myprofile.html"><button style="width:auto;border-radius:5px;background-color: #81B622;border: 1px solid gray;color:black;" >MyProfile <i class="fa-solid fa-user"></i></button></a>';
+
 
     logout1.addEventListener('click',(e)=>{
       auth.signOut().then(function() {

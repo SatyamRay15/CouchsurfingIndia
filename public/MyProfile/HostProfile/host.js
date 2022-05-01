@@ -226,11 +226,14 @@ function renderHostRequest(docu,req){
   div7.setAttribute('style','display:flex;flex-direction:column;align-items:center;border: 1px solid gray;padding:8px');
   div9.setAttribute('class','p-3');
   var docum1;
+  
   if(req==1){
+    // docum1=(docu.id).replace("accepted","");
     docum1=(docu.id).replace("requesting","");
   }else if(req==2){
     docum1=(docu.id).replace("request","");
   }
+  console.log(docum1);
   getDoc(doc(db,"users",docum1)).then((docum)=>{
     h6.setAttribute('id',docu.id+docu.data().timestamp);
     
